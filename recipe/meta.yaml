@@ -1,4 +1,4 @@
-{% set version = '0.22-8' %}
+{% set version = "0.22-11" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/qtl2_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/qtl2/qtl2_{{ version }}.tar.gz
-  sha256: aad1d4790e1902f72ce38a931e38599d63e56cd7681b6c68502e7b4f8f26871f
+  sha256: b95ac5f04501a99a30db699b7147958c751b3d438cabaf5913897d4cbdfccd35
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -56,12 +56,10 @@ test:
 about:
   home: https://kbroman.org/qtl2, https://github.com/rqtl/qtl2
   license: GPL-3.0-only
-  summary: Provides a set of tools to perform quantitative trait locus (QTL) analysis in experimental
-    crosses. It is a reimplementation of the 'R/qtl' package to better handle high-dimensional
-    data and complex cross designs. Broman et al. (2018) <doi:10.1534/genetics.118.301595>.
+  summary: Provides a set of tools to perform quantitative trait locus (QTL) analysis in experimental crosses. It is a reimplementation of the 'R/qtl' package to better handle high-dimensional data and complex cross designs. Broman et al. (2018) <doi:10.1534/genetics.118.301595>.
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:

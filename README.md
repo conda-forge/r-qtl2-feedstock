@@ -5,7 +5,7 @@ Home: https://kbroman.org/qtl2, https://github.com/rqtl/qtl2
 
 Package license: GPL-3.0-only
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Provides a set of tools to perform quantitative trait locus (QTL) analysis in experimental crosses. It is a reimplementation of the 'R/qtl' package to better handle high-dimensional data and complex cross designs. Broman et al. (2018) <doi:10.1534/genetics.118.301595>.
 
