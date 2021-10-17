@@ -1,4 +1,4 @@
-{% set version = "0.24" %}
+{% set version = "0.28" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/qtl2_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/qtl2/qtl2_{{ version }}.tar.gz
-  sha256: 068594fdf59bbdac57fab4fa03cbe63b4f3350da791e345b0695cf0f209ca894
+  sha256: 3e3d19a0220a696199f0c690d0faca1290f852549f2dc3fabdf51c4c7f33ec5e
 
 build:
   merge_build_host: true  # [win]
