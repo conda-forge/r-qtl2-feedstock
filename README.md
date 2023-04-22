@@ -1,11 +1,22 @@
+About r-qtl2-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-qtl2-feedstock/blob/main/LICENSE.txt)
+
 About r-qtl2
-============
+------------
 
 Home: https://kbroman.org/qtl2, https://github.com/rqtl/qtl2
 
 Package license: GPL-3.0-only
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-qtl2-feedstock/blob/main/LICENSE.txt)
+Summary: Provides a set of tools to perform quantitative trait locus (QTL) analysis in experimental crosses. It is a reimplementation of the 'R/qtl' package to better handle high-dimensional data and complex cross designs. Broman et al. (2018) <doi:10.1534/genetics.118.301595>.
+About r-qtl2
+------------
+
+Home: https://kbroman.org/qtl2, https://github.com/rqtl/qtl2
+
+Package license: GPL-3.0-only
 
 Summary: Provides a set of tools to perform quantitative trait locus (QTL) analysis in experimental crosses. It is a reimplementation of the 'R/qtl' package to better handle high-dimensional data and complex cross designs. Broman et al. (2018) <doi:10.1534/genetics.118.301595>.
 
