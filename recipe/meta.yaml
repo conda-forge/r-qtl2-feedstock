@@ -1,4 +1,4 @@
-{% set version = "0.34" %}
+{% set version = "0.36" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/qtl2_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/qtl2/qtl2_{{ version }}.tar.gz
-  sha256: fe73625fe2c1d9c269665f1ff7497afb4c20aef3f6edf413985d2c50508d7cc0
+  sha256: b25cbbf7fceb236586200c51d6152e8a4fd46a2d4cd371193efcf016dc90c46b
 
 build:
   merge_build_host: true  # [win]
@@ -22,7 +22,9 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}              # [not win]
+    - {{ stdlib("c") }}                # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
+    - {{ stdlib("m2w64_c") }}          # [win]
     - {{ compiler('cxx') }}            # [not win]
     - {{ compiler('m2w64_cxx') }}      # [win]
     - {{ posix }}filesystem        # [win]
