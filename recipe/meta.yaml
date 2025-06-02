@@ -1,4 +1,4 @@
-{% set version = "0.36" %}
+{% set version = "0.38" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/qtl2_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/qtl2/qtl2_{{ version }}.tar.gz
-  sha256: b25cbbf7fceb236586200c51d6152e8a4fd46a2d4cd371193efcf016dc90c46b
+  sha256: 94b89653167c83a55cbb49ea9042a3b7acb2375737385b3a0f2e61e1be62099e
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
